@@ -1,0 +1,36 @@
+@import "variables";
+
+$banner-height: 400px;
+
+.banner {
+  height: $banner-height;
+  width: 100%;
+  background: url("../images/banner.jpg");
+  background-size: cover;
+
+  &__content {
+    display: inline-block;
+    background: transparentize($color__white, .2);
+    width: $banner-height - 50px;
+    height: $banner-height - 50px;
+    margin-right: 10%;
+    margin-top: 25px;
+    padding: 50px;
+    float: right;
+
+    &__title {
+      font-size: $font__size--title;
+      text-align: center;
+    }
+
+    &__body {
+      font-size: $font__size--description;
+      text-align: center;
+    }
+
+    &__button {
+      margin-top: 20px;
+      width: 100%;
+    }
+  }
+}

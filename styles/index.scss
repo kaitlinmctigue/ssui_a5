@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script|Roboto');
+
+@import "buttons";
+@import "home";
+@import "layout";
+@import "navigation";
+
+body {
+  font-family: $font--default;
+  color: $color__text--default;
+}
+
+h1, h2 {
+  font-family: $font--title;
+  color: $color__text--default;
+}
+
+h1 {
+  font-size: $font__size--title;
+}

@@ -1,0 +1,61 @@
+@import "variables";
+$spacing: 20px;
+
+.section {
+  text-align: center;
+  padding: $spacing $spacing ($spacing * 2) $spacing;
+
+  &--inverted {
+    background: $color__background;
+    color: $color__white;
+
+    * {
+      color: $color__white;
+    }
+  }
+
+  &__title {
+    width: 400px;
+    margin: 0 auto;
+    margin-top: $spacing;
+  }
+
+  &__description {
+    width: 600px;
+    margin: 0 auto;
+    margin-top: $spacing;
+  }
+
+  &__images {
+    margin-top: $spacing;
+
+    &__image {
+      border-radius: 50%;
+    }
+  }
+
+  &__button {
+    margin-top: $spacing;
+  }
+}
+
+.footer {
+  width: 100%;
+  padding: $spacing;
+  background: $color__background;
+  text-align: center;
+
+  .btn {
+    margin-right: $spacing;
+  }
+
+  &__copyright {
+    margin-top: $spacing;
+    display: inline-block;
+    width: 100%;
+  }
+
+  * {
+    color: $color__white;
+  }
+}

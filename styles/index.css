@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css?family=Dancing+Script|Roboto");
+button.btn {
+  text-transform: uppercase;
+  font-family: "Roboto", Helvetica, Arial sans-serif;
+  border-radius: 0;
+  padding: 8px 20px; }
+  button.btn.btn-positive {
+    background: #184E83;
+    color: #fff;
+    border: 1px solid transparent; }
+    button.btn.btn-positive:hover {
+      background: #2068ae; }
+  button.btn.btn-negative {
+    background: #39424D;
+    color: #fff;
+    border: 1px solid #fff; }
+    button.btn.btn-negative:hover {
+      background: #4f5b6a; }
+
+.banner {
+  height: 400px;
+  width: 100%;
+  background: url("../images/banner.jpg");
+  background-size: cover; }
+  .banner__content {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.8);
+    width: 350px;
+    height: 350px;
+    margin-right: 10%;
+    margin-top: 25px;
+    padding: 50px;
+    float: right; }
+    .banner__content__title {
+      font-size: 42px;
+      text-align: center; }
+    .banner__content__body {
+      font-size: 13px;
+      text-align: center; }
+    .banner__content__button {
+      margin-top: 20px;
+      width: 100%; }
+
+.section {
+  text-align: center;
+  padding: 20px 20px 40px 20px; }
+  .section--inverted {
+    background: #39424D;
+    color: #fff; }
+    .section--inverted * {
+      color: #fff; }
+  .section__title {
+    width: 400px;
+    margin: 0 auto;
+    margin-top: 20px; }
+  .section__description {
+    width: 600px;
+    margin: 0 auto;
+    margin-top: 20px; }
+  .section__images {
+    margin-top: 20px; }
+    .section__images__image {
+      border-radius: 50%; }
+  .section__button {
+    margin-top: 20px; }
+
+.footer {
+  width: 100%;
+  padding: 20px;
+  background: #39424D;
+  text-align: center; }
+  .footer .btn {
+    margin-right: 20px; }
+  .footer__copyright {
+    margin-top: 20px;
+    display: inline-block;
+    width: 100%; }
+  .footer * {
+    color: #fff; }
+
+.navbar {
+  background-color: #fff; }
+  .navbar .navbar-brand {
+    color: #39424D;
+    font-family: "Dancing Script", cursive;
+    font-size: 30px; }
+    .navbar .navbar-brand:hover, .navbar .navbar-brand:focus {
+      color: #39424D; }
+  .navbar .navbar-text {
+    color: #39424D; }
+    .navbar .navbar-text a {
+      color: #39424D; }
+      .navbar .navbar-text a:hover, .navbar .navbar-text a:focus {
+        color: #39424D; }
+  .navbar .navbar-nav .nav-link {
+    color: #39424D;
+    border-radius: .25rem;
+    margin: 0 0.25em; }
+    .navbar .navbar-nav .nav-link:not(.disabled):hover, .navbar .navbar-nav .nav-link:not(.disabled):focus {
+      color: #39424D; }
+  .navbar .navbar-nav .dropdown-menu {
+    background-color: #fff;
+    border-color: #fff; }
+    .navbar .navbar-nav .dropdown-menu .dropdown-item {
+      color: #39424D; }
+      .navbar .navbar-nav .dropdown-menu .dropdown-item:hover, .navbar .navbar-nav .dropdown-menu .dropdown-item:focus, .navbar .navbar-nav .dropdown-menu .dropdown-item.active {
+        color: #39424D;
+        background-color: #fff; }
+    .navbar .navbar-nav .dropdown-menu .dropdown-divider {
+      border-top-color: #fff; }
+  .navbar .navbar-nav .nav-item.active .nav-link, .navbar .navbar-nav .nav-item.active .nav-link:hover, .navbar .navbar-nav .nav-item.active .nav-link:focus, .navbar .navbar-nav .nav-item.show .nav-link, .navbar .navbar-nav .nav-item.show .nav-link:hover, .navbar .navbar-nav .nav-item.show .nav-link:focus {
+    color: #39424D;
+    background-color: #fff; }
+  .navbar .navbar-toggle {
+    border-color: #fff; }
+    .navbar .navbar-toggle:hover, .navbar .navbar-toggle:focus {
+      background-color: #fff; }
+    .navbar .navbar-toggle .navbar-toggler-icon {
+      color: #39424D; }
+  .navbar .navbar-collapse,
+  .navbar .navbar-form {
+    border-color: #39424D; }
+  .navbar .navbar-link {
+    color: #39424D; }
+    .navbar .navbar-link:hover {
+      color: #39424D; }
+
+@media (max-width: 575px) {
+  .navbar-expend-sm .navbar-nav .show .dropdown-menu .dropdown-item {
+    color: #39424D; }
+    .navbar-expend-sm .navbar-nav .show .dropdown-menu .dropdown-item:hover, .navbar-expend-sm .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+      color: #39424D; }
+  .navbar-expend-sm .navbar-nav .show .dropdown-menu .dropdown-item.active {
+    color: #39424D;
+    background-color: #fff; } }
+@media (max-width: 767px) {
+  .navbar-expend-md .navbar-nav .show .dropdown-menu .dropdown-item {
+    color: #39424D; }
+    .navbar-expend-md .navbar-nav .show .dropdown-menu .dropdown-item:hover, .navbar-expend-md .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+      color: #39424D; }
+  .navbar-expend-md .navbar-nav .show .dropdown-menu .dropdown-item.active {
+    color: #39424D;
+    background-color: #fff; } }
+@media (max-width: 991px) {
+  .navbar-expend-lg .navbar-nav .show .dropdown-menu .dropdown-item {
+    color: #39424D; }
+    .navbar-expend-lg .navbar-nav .show .dropdown-menu .dropdown-item:hover, .navbar-expend-lg .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+      color: #39424D; }
+  .navbar-expend-lg .navbar-nav .show .dropdown-menu .dropdown-item.active {
+    color: #39424D;
+    background-color: #fff; } }
+@media (max-width: 1199px) {
+  .navbar-expend-xl .navbar-nav .show .dropdown-menu .dropdown-item {
+    color: #39424D; }
+    .navbar-expend-xl .navbar-nav .show .dropdown-menu .dropdown-item:hover, .navbar-expend-xl .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+      color: #39424D; }
+  .navbar-expend-xl .navbar-nav .show .dropdown-menu .dropdown-item.active {
+    color: #39424D;
+    background-color: #fff; } }
+.navbar-expend .navbar-nav .show .dropdown-menu .dropdown-item {
+  color: #39424D; }
+  .navbar-expend .navbar-nav .show .dropdown-menu .dropdown-item:hover, .navbar-expend .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+    color: #39424D; }
+.navbar-expend .navbar-nav .show .dropdown-menu .dropdown-item.active {
+  color: #39424D;
+  background-color: #fff; }
+
+body {
+  font-family: "Roboto", Helvetica, Arial sans-serif;
+  color: #39424D; }
+
+h1, h2 {
+  font-family: "Dancing Script", cursive;
+  color: #39424D; }
+
+h1 {
+  font-size: 42px; }
+
+/*# sourceMappingURL=index.css.map */

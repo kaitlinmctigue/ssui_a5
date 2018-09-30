@@ -1,0 +1,35 @@
+@import "variables";
+
+$color__btn--positive: $color__blue;
+$color__btn--negative: $color__navy;
+$color__btn--positive__text: $color__white;
+$color__btn--negative__text: $color__white;
+
+button {
+  &.btn {
+    text-transform: uppercase;
+    font-family: $font--default;
+    border-radius: 0;
+    padding: 8px 20px;
+
+    &.btn-positive {
+      background: $color__btn--positive;
+      color: $color__btn--positive__text;
+      border: 1px solid transparent;
+
+      &:hover {
+        background: lighten($color__btn--positive, 10%);
+      }
+    }
+
+    &.btn-negative {
+      background: $color__btn--negative;
+      color: $color__btn--negative__text;
+      border: 1px solid $color__btn--negative__text;
+
+      &:hover {
+        background: lighten($color__btn--negative, 10%);
+      }
+    }
+  }
+}
