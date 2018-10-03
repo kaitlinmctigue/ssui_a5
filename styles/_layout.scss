@@ -26,10 +26,26 @@ $spacing: 20px;
     margin-top: $spacing;
   }
 
+  &__nav {
+    margin-top: $spacing;
+    ul {
+      list-style: none;
+
+      li {
+        display: inline-block;
+        margin-right: 30px;
+
+        &.active {
+          border-bottom: 3px solid $color__navy;
+        }
+      }
+    }
+  }
+
   &__images {
     margin-top: $spacing;
 
-    &__image {
+    img {
       border-radius: 50%;
     }
   }

@@ -57,9 +57,18 @@ button.btn {
     width: 600px;
     margin: 0 auto;
     margin-top: 20px; }
+  .section__nav {
+    margin-top: 20px; }
+    .section__nav ul {
+      list-style: none; }
+      .section__nav ul li {
+        display: inline-block;
+        margin-right: 30px; }
+        .section__nav ul li.active {
+          border-bottom: 3px solid #39424D; }
   .section__images {
     margin-top: 20px; }
-    .section__images__image {
+    .section__images img {
       border-radius: 50%; }
   .section__button {
     margin-top: 20px; }
@@ -171,9 +180,7 @@ body {
 
 h1, h2 {
   font-family: "Dancing Script", cursive;
-  color: #39424D; }
-
-h1 {
+  color: #39424D;
   font-size: 42px; }
 
 /*# sourceMappingURL=index.css.map */
