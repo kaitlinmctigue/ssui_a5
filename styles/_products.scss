@@ -2,7 +2,7 @@
 
 //product detail page
 .product-detail {
-  height: calc(100vh - 70px);
+  //height: calc(100vh - 70px);
   max-width: $layout__max-width;
   margin: 0 auto;
   padding: $spacing * 2 0;
@@ -61,12 +61,20 @@
     width: 100%;
     margin: $spacing * 2 0;
   }
+
+  &__subsection {
+    font-size: 12px;
+  }
 }
 
 //product grid
 .all-products {
   max-width: $layout__max-width;
   margin: 0 auto;
+}
+
+.related-products {
+  margin-top: $spacing;
 }
 
 //thumbnail

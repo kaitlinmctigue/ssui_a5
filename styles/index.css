@@ -56,7 +56,7 @@ button.btn {
 
 .divider {
   max-width: 1000px;
-  width: 80%;
+  width: 100%;
   background: #39424D;
   height: 2px;
   margin: 0 auto; }
@@ -202,7 +202,6 @@ button.btn {
   background-color: #fff; }
 
 .product-detail {
-  height: calc(100vh - 70px);
   max-width: 1000px;
   margin: 0 auto;
   padding: 40px 0; }
@@ -241,10 +240,15 @@ button.btn {
   .product-detail .divider {
     width: 100%;
     margin: 40px 0; }
+  .product-detail__subsection {
+    font-size: 12px; }
 
 .all-products {
   max-width: 1000px;
   margin: 0 auto; }
+
+.related-products {
+  margin-top: 20px; }
 
 .product {
   margin-bottom: 40px; }
@@ -280,5 +284,8 @@ h1, h2 {
   font-family: "Dancing Script", cursive;
   color: #39424D;
   font-size: 42px; }
+
+h3 {
+  font-size: 16px; }
 
 /*# sourceMappingURL=index.css.map */
