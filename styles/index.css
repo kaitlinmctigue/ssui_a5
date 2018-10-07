@@ -213,6 +213,17 @@ button.btn {
     background-repeat: no-repeat; }
   .product-detail__name {
     margin-top: 60px; }
+  .product-detail #colorpicker {
+    text-indent: 35px; }
+  .product-detail #colorpreview {
+    display: inline-block;
+    height: 28px;
+    width: 30px;
+    background-color: #d1ffee;
+    border: 1px solid #ddd;
+    position: absolute;
+    left: 22px;
+    top: 4px; }
   .product-detail__rating, .product-detail__price {
     font-size: 20px;
     display: inline-flex;
@@ -223,7 +234,8 @@ button.btn {
       padding-left: 5px;
       padding-right: 5px; }
       .product-detail__form .incrementer .fa {
-        margin: 0 5px; }
+        margin: -10px 0;
+        padding: 10px; }
     .product-detail__form #cart-button {
       width: 100%; }
   .product-detail .divider {

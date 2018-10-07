@@ -18,6 +18,21 @@
     margin-top: $spacing * 3;
   }
 
+  #colorpicker {
+    text-indent: 35px;
+  }
+
+  #colorpreview {
+    display: inline-block;
+    height: 28px;
+    width: 30px;
+    background-color: #d1ffee;
+    border: 1px solid #ddd;
+    position: absolute;
+    left: 22px;
+    top: 4px;
+  }
+
   &__rating, &__price {
     font-size: 20px;
     display: inline-flex;
@@ -32,7 +47,8 @@
       padding-right: 5px;
 
       .fa {
-        margin: 0 5px;
+        margin: -10px 0;
+        padding: 10px;
       }
     }
 
