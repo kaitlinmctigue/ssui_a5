@@ -1,9 +1,18 @@
 @import url("https://fonts.googleapis.com/css?family=Dancing+Script|Roboto");
+a.link {
+  color: #39424D;
+  font-size: 18px; }
+  a.link--back:before {
+    content: "\f0a8";
+    font-family: "FontAwesome";
+    margin-right: 5px; }
+
 button.btn {
   text-transform: uppercase;
   font-family: "Roboto", Helvetica, Arial sans-serif;
   border-radius: 0;
-  padding: 8px 20px; }
+  padding: 8px 30px;
+  margin-left: 10px; }
   button.btn.btn-positive {
     background: #184E83;
     color: #fff;
@@ -16,6 +25,10 @@ button.btn {
     border: 1px solid #fff; }
     button.btn.btn-negative:hover {
       background: #4f5b6a; }
+    button.btn.btn-negative--white {
+      background: #fff;
+      border-color: #184E83;
+      color: #184E83; }
 
 .banner {
   height: 400px;
@@ -41,6 +54,13 @@ button.btn {
       margin-top: 20px;
       width: 100%; }
 
+.divider {
+  max-width: 1000px;
+  width: 80%;
+  background: #39424D;
+  height: 2px;
+  margin: 0 auto; }
+
 .section {
   text-align: center;
   padding: 20px 20px 40px 20px; }
@@ -58,12 +78,13 @@ button.btn {
     margin: 0 auto;
     margin-top: 20px; }
   .section__nav {
-    margin-top: 20px; }
+    margin: 20px 0 40px; }
     .section__nav ul {
       list-style: none; }
       .section__nav ul li {
         display: inline-block;
-        margin-right: 30px; }
+        margin-right: 30px;
+        padding: 5px 0 10px; }
         .section__nav ul li.active {
           border-bottom: 3px solid #39424D; }
   .section__images {
@@ -87,8 +108,14 @@ button.btn {
   .footer * {
     color: #fff; }
 
+.nav-link {
+  border-radius: 0; }
+  .nav-link.active {
+    border-bottom: 3px solid #39424D; }
+
 .navbar {
-  background-color: #fff; }
+  background-color: #fff;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25); }
   .navbar .navbar-brand {
     color: #39424D;
     font-family: "Dancing Script", cursive;
@@ -103,7 +130,7 @@ button.btn {
         color: #39424D; }
   .navbar .navbar-nav .nav-link {
     color: #39424D;
-    border-radius: .25rem;
+    border-radius: 0;
     margin: 0 0.25em; }
     .navbar .navbar-nav .nav-link:not(.disabled):hover, .navbar .navbar-nav .nav-link:not(.disabled):focus {
       color: #39424D; }
@@ -173,6 +200,65 @@ button.btn {
 .navbar-expend .navbar-nav .show .dropdown-menu .dropdown-item.active {
   color: #39424D;
   background-color: #fff; }
+
+.product-detail {
+  height: calc(100vh - 70px);
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 0; }
+  .product-detail__image {
+    height: calc(100vh - 300px);
+    background-size: contain;
+    background-position: top center;
+    background-repeat: no-repeat; }
+  .product-detail__name {
+    margin-top: 60px; }
+  .product-detail__rating, .product-detail__price {
+    font-size: 20px;
+    display: inline-flex;
+    margin-right: 5px; }
+  .product-detail__form {
+    margin-top: 20px; }
+    .product-detail__form .incrementer {
+      padding-left: 5px;
+      padding-right: 5px; }
+      .product-detail__form .incrementer .fa {
+        margin: 0 5px; }
+    .product-detail__form #cart-button {
+      width: 100%; }
+  .product-detail .divider {
+    width: 100%;
+    margin: 40px 0; }
+
+.all-products {
+  max-width: 1000px;
+  margin: 0 auto; }
+
+.product {
+  margin-bottom: 40px; }
+  .product__title {
+    font-size: 16px;
+    color: #39424D; }
+  .product__rating {
+    font-size: 14px;
+    display: inline-block;
+    margin-left: 5px;
+    color: #5a6879; }
+  .product__image {
+    height: 150px;
+    width: 100%;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat; }
+  .product__price {
+    font-weight: bold;
+    display: inline-block;
+    color: #5a6879; }
+  .product__desc {
+    font-size: 11px;
+    max-height: 60px;
+    text-overflow: ellipsis;
+    overflow: hidden; }
 
 body {
   font-family: "Roboto", Helvetica, Arial sans-serif;

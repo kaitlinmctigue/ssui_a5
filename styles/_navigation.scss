@@ -6,8 +6,18 @@ $colDefault: $color__navy;
 $colHighlight: $color__navy;
 $dropDown: true;
 
+.nav-link {
+  border-radius: 0;
+
+  &.active {
+    border-bottom: 3px solid $color__navy;
+  }
+}
+
 .navbar {
   background-color: $bgDefault;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+
   .navbar-brand {
     color: $colDefault;
     font-family: $font--title;
@@ -28,7 +38,7 @@ $dropDown: true;
   .navbar-nav {
     .nav-link {
       color: $colDefault;
-      border-radius: .25rem;
+      border-radius: 0;
       margin: 0 0.25em;
       &:not(.disabled) {
         &:hover, &:focus {

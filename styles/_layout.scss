@@ -1,6 +1,14 @@
 @import "variables";
 $spacing: 20px;
 
+.divider {
+  max-width: $layout__max-width;
+  width: 80%;
+  background: $color__navy;
+  height: 2px;
+  margin: 0 auto;
+}
+
 .section {
   text-align: center;
   padding: $spacing $spacing ($spacing * 2) $spacing;
@@ -27,13 +35,15 @@ $spacing: 20px;
   }
 
   &__nav {
-    margin-top: $spacing;
+    margin: $spacing 0 ($spacing * 2);
+
     ul {
       list-style: none;
 
       li {
         display: inline-block;
         margin-right: 30px;
+        padding: 5px 0 10px;
 
         &.active {
           border-bottom: 3px solid $color__navy;

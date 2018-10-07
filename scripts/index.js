@@ -132,8 +132,7 @@ function loadPage() {
 
     products.forEach(item => {
         let product = new Product(item);
-        // console.log(product.buildItem());
-        productSection.appendChild(product.buildItem());
+        productSection.appendChild(product.buildThumbnail());
     })
 
 }

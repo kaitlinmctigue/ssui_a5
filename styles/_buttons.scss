@@ -5,12 +5,28 @@ $color__btn--negative: $color__navy;
 $color__btn--positive__text: $color__white;
 $color__btn--negative__text: $color__white;
 
+a {
+  &.link {
+    color: $color__navy;
+    font-size: 18px;
+
+    &--back {
+      &:before {
+        content: "\f0a8";
+        font-family: "FontAwesome";
+        margin-right: 5px;
+      }
+    }
+  }
+}
+
 button {
   &.btn {
     text-transform: uppercase;
     font-family: $font--default;
     border-radius: 0;
-    padding: 8px 20px;
+    padding: 8px 30px;
+    margin-left: 10px;
 
     &.btn-positive {
       background: $color__btn--positive;
@@ -29,6 +45,12 @@ button {
 
       &:hover {
         background: lighten($color__btn--negative, 10%);
+      }
+
+      &--white {
+        background: $color__white;
+        border-color: $color__btn--positive;
+        color: $color__btn--positive;
       }
     }
   }
